@@ -1,0 +1,13 @@
+<h1>Stations</h1>
+
+<%= link_to "Back to home", root_path %>
+<ul>
+  <% @stations.each do |station|%>
+  <li>
+    <p><%= station.title %></p>
+    <p><%= station.description %></p>
+    <p><%= station.url %></p>
+    <hr>
+  </li>
+  <% end %>
+</ul>
