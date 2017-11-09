@@ -5,8 +5,7 @@
   <% @stations.each do |station|%>
   <li>
     <p><%= station.title %></p>
-    <p><%= station.description %></p>
-    <p><%= station.url %></p>
+    <p><%= link_to "Go to Station", station_path(station) %></p>
     <hr>
   </li>
   <% end %>

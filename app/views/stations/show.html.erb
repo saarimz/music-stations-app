@@ -1,0 +1,7 @@
+<h1><%= @station.title %></h1>
+
+<%= link_to "Back to all stations", stations_path %>
+
+<h3><%= @station.description %></h3>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" src=<%= @station.url %>></iframe>
+
