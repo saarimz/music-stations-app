@@ -57,6 +57,7 @@ GEM
     crass (1.0.2)
     debug_inspector (0.0.3)
     erubis (2.7.0)
+    excon (0.59.0)
     execjs (2.7.0)
     ffi (1.9.18)
     globalid (0.4.1)
@@ -167,6 +168,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.7)
   byebug
   coffee-rails (~> 4.1.0)
+  excon
   jbuilder (~> 2.0)
   jquery-rails
   pg
