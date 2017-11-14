@@ -1,10 +1,10 @@
 <h1>Stations</h1>
 
 <div class="station__container">
-  <% @stations.each do |station|%>
+  <% @stations.each do |station| %>
   <div class="station__box">
-    <p><%= station.title %></p>
-    <p><%= link_to "Go to Station", station_path(station) %></p>
+    <h3 align="center" class="station__title"><%= station.title %></h3>
+    <%= link_to "Go to Station", station_path(station), class: "btn btn-success station__link" %>
   </div>
   <% end %>
 </div>

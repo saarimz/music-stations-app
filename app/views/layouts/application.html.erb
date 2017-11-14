@@ -9,20 +9,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <header>
-    <div class="page-header header">
-      Stations App
+  <div class="app-container">
+    <header>
+      <div class="page-header header">
+        Stations App
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
+    <div class="footer">
+      <p>&copy; Saarim Zaman 2017 | <%= link_to "About", about_path %></p>
     </div>
-  </header>
-  <section>
-    <div class="container">
-      <%= yield %>
-    </div>
-  </section>
-  <footer class="footer">
-    <p>&copy; Saarim Zaman 2017 | <%= link_to "About", about_path %></p>
-  </footer>
-
+  </div>
 </body>
 </html>

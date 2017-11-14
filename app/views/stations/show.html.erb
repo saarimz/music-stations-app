@@ -1,6 +1,6 @@
 <h1><%= @station.title %></h1>
 
-<%= link_to "Back to all stations", stations_path %>
+<%= link_to "Back", stations_path, class: "glyphicon glyphicon-arrow-left" %>
 
 <h3><%= @station.description %></h3>
 <iframe width="100%" height="300" scrolling="no" frameborder="no" src=<%= @station.url %>></iframe>

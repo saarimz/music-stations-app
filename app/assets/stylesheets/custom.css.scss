@@ -31,6 +31,11 @@ $xl-size: 4.8rem;
 
 //header & footer
 
+.app_container {
+  min-height:100%;
+  position:relative;
+}
+
 .header {
   color: $white;
   font-size: $m-size;
@@ -41,10 +46,12 @@ $xl-size: 4.8rem;
 }
 
 .footer {
-  position: relative;
+  position: absolute;
+  width: 100%;
   right: 0;
   bottom: 0;
   left: 0;
+  height: $l-size;
   padding: $xs-size;
   margin-top: $s-size;
   background-color: #efefef;
@@ -52,13 +59,13 @@ $xl-size: 4.8rem;
 }
 
 
-//index
+//stations
 
 .station__container {
-  border: 1px solid $black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: $xs-size;
 }
 
 .station__box {
@@ -69,5 +76,20 @@ $xl-size: 4.8rem;
   margin: $m-size $s-size;
   padding: $m-size;
   text-align: center;
+  background: $blue;
+  color: $red;
 }
 
+.station__title{
+  text-transform: uppercase;
+  font-size: $m-size;
+}
+
+.station__link {
+  background: $white;
+  color: $purple;
+  border-color: $purple;
+  margin-top: $m-size;
+}
+
+//individual station
