@@ -1,2 +1,73 @@
+//settings
+
+body {
+  font-size: 62.50%;
+  margin: none;
+  padding: none;
+  font-family: Avenir, Arial, sans-serif;
+}
+
+//colors
+
+$blue: #011627;
+$purple: #3D2645;
+$red: #FF3366;
+$grey: #8E9AAF;
+$white: #F6F7F8;
+$black: #000000;
+
+//sizes
+
+$xs-size: 0.6rem;
+$s-size: 1.2rem;
+$m-size: 2.4rem;
+$l-size: 3.0rem;
+$xl-size: 4.8rem;
+
+//imports
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+//header & footer
+
+.header {
+  color: $white;
+  font-size: $m-size;
+  background: $purple;
+  margin-top: 0;
+  text-align: center;
+  padding-top: $s-size;
+}
+
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: $xs-size;
+  margin-top: $s-size;
+  background-color: #efefef;
+  text-align: center;
+}
+
+
+//index
+
+.station__container {
+  border: 1px solid $black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.station__box {
+  width: $xl-size * 8;
+  height: $xl-size * 5;
+  border: $s-size * 0.3 solid $black;
+  border-radius: $xs-size;
+  margin: $m-size $s-size;
+  padding: $m-size;
+  text-align: center;
+}
+
