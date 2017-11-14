@@ -1,11 +1,9 @@
-//settings
+//imports
 
-body {
-  font-size: 62.50%;
-  margin: none;
-  padding: none;
-  font-family: Avenir, Arial, sans-serif;
-}
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
 
 //colors
 
@@ -16,6 +14,17 @@ $grey: #8E9AAF;
 $white: #F6F7F8;
 $black: #000000;
 
+//base
+
+body {
+  font-size: 62.50%;
+  margin: none;
+  padding: none;
+  font-family: Avenir, Arial, sans-serif;
+  height: 100%;
+  background: $white;
+}
+
 //sizes
 
 $xs-size: 0.6rem;
@@ -23,39 +32,65 @@ $s-size: 1.2rem;
 $m-size: 2.4rem;
 $l-size: 3.0rem;
 $xl-size: 4.8rem;
-
-//imports
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
+$negative-xl-size: -4.8rem;
 
 //header & footer
 
 .app_container {
-  min-height:100%;
-  position:relative;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto ($xl-size * -1);
 }
 
 .header {
   color: $white;
-  font-size: $m-size;
+  font-size: $l-size;
   background: $purple;
   margin-top: 0;
   text-align: center;
   padding-top: $s-size;
 }
 
+.push {
+  height: $xl-size;
+}
+
 .footer {
-  position: absolute;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: $l-size;
-  padding: $xs-size;
-  margin-top: $s-size;
-  background-color: #efefef;
+  height: $xl-size;
+  background: $purple;
   text-align: center;
+  color: $white;
+  padding-top: $s-size;
+}
+
+.app-container > .container {
+  padding-top: $xl-size;
+}
+
+.footer__copy {
+  font-size: $s-size;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+//About page
+
+.about__header {
+  font-weight: bolder;
+  font-size: $l-size;
+}
+
+.about__description {
+  font-size: $m-size;
 }
 
 
