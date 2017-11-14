@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MusicStationsApp</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div class="app-container">
+  <head>
+    <title>MusicStationsApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
     <header>
       <div class="page-header header">
         Stations App
@@ -20,12 +19,10 @@
         <%= yield %>
       </div>
     </section>
-    <div class="push"></div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <p class="footer__copy">&copy; Saarim Zaman 2017 | <%= link_to "About", about_path %></p>
+    <div class="footer">
+      <div class="container">
+        <p class="footer-block">&copy; Saarim Zaman 2017 | <%= link_to "About", about_path %></p>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
